@@ -1,0 +1,15 @@
+services:
+  db:
+    image: postgres:16
+    container_name: hello_tasks_db
+    environment:
+      POSTGRES_USER: hello
+      POSTGRES_PASSWORD: hello
+      POSTGRES_DB: hello_tasks
+    ports:
+      - "5432:5432"
+    volumes:
+      - hello_tasks_pgdata:/var/lib/postgresql/data
+
+volumes:
+  hello_tasks_pgdata:
