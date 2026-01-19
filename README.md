@@ -1,205 +1,241 @@
-# \# Hello Tasks API
+##### \# Hello Tasks API
 
-# 
+##### 
 
-# Proste API edukacyjne do zarządzania zadaniami.  
+##### Proste API edukacyjne do zarządzania zadaniami.  
 
-# Projekt realizowany krok po kroku w ramach nauki \*\*backendu (Python, FastAPI)\*\* z naciskiem na \*\*dobre praktyki, HTTP, Git i bezpieczeństwo\*\*.
+##### Projekt realizowany krok po kroku w ramach nauki \*\*backendu (Python, FastAPI)\*\* z naciskiem na \*\*dobre praktyki, HTTP, Git i bezpieczeństwo\*\*.
 
-# 
+##### 
 
-# ---
+##### ---
 
-# 
+##### 
 
-# \## 🎯 Cel projektu
+##### \## 🎯 Cel projektu
 
-# 
+##### 
 
-# Celem projektu jest:
+##### Celem projektu jest:
 
-# \- zbudowanie \*\*realnego backendowego API\*\* od zera,
+##### \- zbudowanie \*\*realnego backendowego API\*\* od zera,
 
-# \- nauka pracy z \*\*Git/GitHub\*\*,
+##### \- nauka pracy z \*\*Git/GitHub\*\*,
 
-# \- zrozumienie \*\*HTTP, walidacji danych i logowania\*\*,
+##### \- zrozumienie \*\*HTTP, walidacji danych i logowania\*\*,
 
-# \- przygotowanie fundamentu pod \*\*bazę danych i bezpieczeństwo\*\*.
+##### \- przygotowanie fundamentu pod \*\*bazę danych i bezpieczeństwo\*\*.
 
-# 
+##### 
 
-# Projekt rozwijany iteracyjnie (tydzień po tygodniu).
+##### Projekt rozwijany iteracyjnie (tydzień po tygodniu).
 
-# 
+##### 
 
-# ---
+##### ---
 
-# 
+##### 
 
-# \## 🧱 Stack technologiczny
+##### \## 🧱 Stack technologiczny
 
-# 
+##### 
 
-# \- \*\*Python 3.11+\*\*
+##### \- \*\*Python 3.11+\*\*
 
-# \- \*\*FastAPI\*\*
+##### \- \*\*FastAPI\*\*
 
-# \- \*\*Uvicorn\*\*
+##### \- \*\*Uvicorn\*\*
 
-# \- \*\*PostgreSQL\*\* (Docker)
+##### \- \*\*PostgreSQL\*\* (Docker)
 
-# \- \*\*Git / GitHub\*\*
+##### \- \*\*Git / GitHub\*\*
 
-# \- \*\*Docker / Docker Compose\*\*
+##### \- \*\*Docker / Docker Compose\*\*
 
-# 
+##### 
 
-# ---
+##### ---
 
-# 
+##### 
 
-# \## 📂 Struktura projektu
+##### \## 📂 Struktura projektu
 
-# hello-tasks/
+##### hello-tasks/
 
-# ├── app/
+##### ├── app/
 
-# │ ├── init.py
+##### │ ├── init.py
 
-# │ ├── main.py # FastAPI app
+##### │ ├── main.py # FastAPI app
 
-# │ ├── logger.py # Logging z rotacją
+##### │ ├── logger.py # Logging z rotacją
 
-# │ ├── log\_demo.py # Demo loggera
+##### │ ├── log\_demo.py # Demo loggera
 
-# │ ├── json\_parser.py # Walidacja danych (Day 2)
+##### │ ├── json\_parser.py # Walidacja danych (Day 2)
 
-# │ └── api/
+##### │ └── api/
 
-# │ ├── init.py
+##### │ ├── init.py
 
-# │ └── routes.py # Endpointy API
+##### │ └── routes.py # Endpointy API
 
-# │
+##### │
 
-# ├── notes/
+##### ├── notes/
 
-# │ └── http.md # Notatki HTTP
+##### │ └── http.md # Notatki HTTP
 
-# │
+##### │
 
-# ├── scripts/
+##### ├── scripts/
 
-# │ └── run\_dev.bat # Uruchamianie API (Windows)
+##### │ └── run\_dev.bat # Uruchamianie API (Windows)
 
-# │
+##### │
 
-# ├── docker-compose.yml # PostgreSQL (Docker)
+##### ├── docker-compose.yml # PostgreSQL (Docker)
 
-# ├── requirements.txt
+##### ├── requirements.txt
 
-# ├── README.md
+##### ├── README.md
 
 └── .gitignore
 
 
-===
+---
 
-# ---
+##### ---
 
-# 
+##### 
 
-# \## 📅 Zakres zrealizowany – Tydzień 1
+##### \## 📅 Zakres zrealizowany – Tydzień 1
 
-# 
+##### 
 
-# \### ✅ Dzień 1 – Fundamenty
+##### \### ✅ Dzień 1 – Fundamenty
 
-# \- Git: init, commit, branch, push
+##### \- Git: init, commit, branch, push
 
-# \- Struktura projektu
+##### \- Struktura projektu
 
-# \- README + plan MVP
+##### \- README + plan MVP
 
-# 
+##### 
 
-# \### ✅ Dzień 2 – Python Core
+##### \### ✅ Dzień 2 – Python Core
 
-# \- typy, funkcje, wyjątki
+##### \- typy, funkcje, wyjątki
 
-# \- `dataclasses`
+##### \- `dataclasses`
 
-# \- walidacja danych JSON → obiekt
+##### \- walidacja danych JSON → obiekt
 
-# 
+##### 
 
-# \### ✅ Dzień 3 – OOP + HTTP
+##### \### ✅ Dzień 3 – OOP + HTTP
 
-# \- klasy, dziedziczenie, kompozycja
+##### \- klasy, dziedziczenie, kompozycja
 
-# \- notatki HTTP (metody, statusy, nagłówki)
+##### \- notatki HTTP (metody, statusy, nagłówki)
 
-# \- cookies vs tokeny
+##### \- cookies vs tokeny
 
-# 
+##### 
 
-# \### ✅ Dzień 4 – Git + Logging
+##### \### ✅ Dzień 4 – Git + Logging
 
-# \- merge vs rebase
+##### \- merge vs rebase
 
-# \- tagi i release
+##### \- tagi i release
 
-# \- logging produkcyjny (rotacja plików)
+##### \- logging produkcyjny (rotacja plików)
 
-# 
+##### 
 
-# \### ✅ Dzień 5 – SQL + PostgreSQL
+##### \### ✅ Dzień 5 – SQL + PostgreSQL
 
-# \- tabele, PK, FK, indeksy
+##### \- tabele, PK, FK, indeksy
 
-# \- PostgreSQL w Dockerze
+##### \- PostgreSQL w Dockerze
 
-# \- pierwsza tabela `tasks`
+##### \- pierwsza tabela `tasks`
 
-# 
+##### 
 
-# \### ✅ Dzień 6 – FastAPI
+##### \### ✅ Dzień 6 – FastAPI
 
-# \- FastAPI + Uvicorn
+##### \- FastAPI + Uvicorn
 
-# \- endpointy:
+##### \- endpointy:
 
-# &nbsp; - `GET /health`
+##### &nbsp; - `GET /health`
 
-# &nbsp; - `GET /tasks`
+##### &nbsp; - `GET /tasks`
 
-# \- struktura API
+##### \- struktura API
 
-# 
+##### 
 
-# \### ✅ Dzień 7 – DX + Dokumentacja
+##### \### ✅ Dzień 7 – DX + Dokumentacja
 
-# \- Swagger / OpenAPI (`/docs`)
+##### \- Swagger / OpenAPI (`/docs`)
 
-# \- modele odpowiedzi (Pydantic)
+##### \- modele odpowiedzi (Pydantic)
 
-# \- skrypty uruchomieniowe
+##### \- skrypty uruchomieniowe
 
-# \- kompletne README
+##### \- kompletne README
 
-# 
+##### 
 
-# ---
+##### ---
 
-# 
+##### 
 
-# \## 🚀 Endpointy API
+##### \## 🚀 Endpointy API
 
-# 
+##### 
 
-# \### Health check
+##### \### Health check
 
+##### GET /health
 
+##### 
 
+##### 
 
+##### Odpowiedź:
+
+##### ```json
+
+##### {
+
+##### &nbsp; "status": "ok"
+
+##### }
+
+##### 
+
+##### Lista zadań (na sztywno)
+
+##### GET /tasks
+
+##### 
+
+##### 
+
+##### Odpowiedź:
+
+##### 
+
+##### \[
+
+##### &nbsp; { "id": 1, "title": "Learn FastAPI", "completed": false },
+
+##### &nbsp; { "id": 2, "title": "Connect PostgreSQL later", "completed": false }
+
+##### ]
+
+##### 
 
