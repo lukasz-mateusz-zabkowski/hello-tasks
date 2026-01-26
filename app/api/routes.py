@@ -24,12 +24,12 @@ def health() -> HealthResponse:
     return HealthResponse(status="ok")
 
 
-@router.get(
-    "/tasks",
-    summary="List tasks",
-    description="Zwraca listę zadań (na razie na sztywno, bez bazy).",
-    response_model=list[TaskResponse],
-)
+# @router.get(
+#    "/tasks",
+#    summary="List tasks",
+#    description="Zwraca listę zadań (na razie na sztywno, bez bazy).",
+#    response_model=list[TaskResponse],
+# )
 def list_tasks() -> list[TaskResponse]:
     return [
         TaskResponse(id=1, title="Learn FastAPI", completed=False),

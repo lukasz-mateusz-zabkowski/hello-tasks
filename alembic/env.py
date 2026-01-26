@@ -9,6 +9,8 @@ from sqlalchemy.pool import NullPool
 from app.core.config import DATABASE_URL
 from app.db.base import Base
 
+target_metadata = Base.metadata
+
 # IMPORTANT: import models so Alembic sees them (populates Base.metadata)
 from app.models.user import User  # noqa: F401
 from app.models.task import Task  # noqa: F401
